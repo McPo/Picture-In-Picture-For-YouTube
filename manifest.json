@@ -1,0 +1,17 @@
+{
+	"name": "Picture-In-Picture For YouTube\u2122",   
+	"description": "Docks YouTube\u2122 videos to the corner of the screen allowing seemless browsing between tabs and applications.",
+	"version": "0.3.1",
+	"icons": {"128": "icon.png"},
+	
+	"permissions": ["notifications"],
+	"minimum_chrome_version": "20.0.1130.1",
+	"manifest_version": 2,
+	"update_url": "http://clients2.google.com/service/update2/crx",
+
+	"options_page": "Options.html",
+	"background": { "scripts": ["Background.js"] },
+	"content_scripts": [
+		{"js": [ "ContentScript.js" ], "matches": [ "http://www.youtube.com/watch*", "https://www.youtube.com/watch*" ]}
+		]
+}

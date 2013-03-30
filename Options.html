@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Picture-In-Picture For YouTube &trade;</title>
+		
+		<style type="text/css">
+			body {
+				background-color: #555555;
+				color:#FFFFFF;
+				font-family: arial,sans-serif;				
+				padding:0px;
+				margin:0px;
+				text-align: justify;
+			}
+			#header { 
+				background-image: url('header.png');
+				background-repeat: no-repeat;
+				background-color: #000000;
+				background-position: bottom center;	
+				font-weight: bold;
+				font-size: 40px;
+				border-bottom: 20px solid #000000;
+				padding: 50 0 10 200px;
+				margin: 0 auto;
+			}
+			#status { 
+				background-color: #00CC00;
+				text-align: center;
+				color:#000000;
+			}
+			#options { 
+				background-color: #000000;
+				margin: 0 auto;
+				width:200px;
+			}
+			#button {
+				text-align: center;
+				cursor: pointer;
+				background-color: #CC0000;
+			}
+		</style>
+		
+		<script src="Options.js"></script>
+	</head>
+
+	<body>
+		<div id="header"><img src="icon.png" alt="Picture-In-Picture For YouTube ™" width="42px"/> Picture-In-Picture For YouTube &trade;</div>
+		<div id="status"></div>
+		<div id="options">
+			<input type="checkbox" name="player" value="controls"/>Controls<br/>
+			<input type="checkbox" name="player" value="hide"/>Auto-Hide<br/>		
+			<input type="checkbox" name="player" value="fs"/>Full Screen<br/>
+			<input type="checkbox" name="player" value="brand"/>Modest Branding<br/>
+			<input type="checkbox" name="player" value="info"/>Show-Info<br/>		
+			<input type="checkbox" name="player" value="play"/>Auto-Play<br/>
+			<br>
+			<!--
+			<br>Below Options Seem to Have no Affect
+			<hr>
+			<input type="checkbox" name="player" value="cc"/>Closed Captions<br/>
+			<input type="checkbox" name="player" value="kb"/>Keyboard<br/>
+			<input type="checkbox" name="player" value="hd"/>High Definition<br/>
+			<input type="checkbox" name="player" value="anno"/>Annotations<br/>1/3
+			<input type="checkbox" name="player" value="rel"/>Suggestions<br/>
+			<input type="checkbox" name="player" value="loop"/>Loop<br/>
+			<br>
+			Width:<input type="text" name="width" onKeyUp="if(this.value!=300)this.value=300;" value="300" disabled>px<br/>
+			Height:<input type="text" name="height" onKeyUp="if(this.value>160)this.value=160;"  value="160" disabled>px<br/>
+			-->
+			<div id="button">Save</span>
+		</div>		
+	</body>
+</html>
